@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SortRestaurants from "./SortRestaurants";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const Wrapper = styled.div`
   font-family: ProximaNova, Arial, Helvetica Neue, sans-serif;
@@ -33,21 +34,10 @@ const Title = styled.div`
 `;
 
 const AllRestaurants = () => {
+  const matches = useMediaQuery('(max-width:960px)');
   return (
     <Wrapper>
-      <div className="container-fluid" style={{ width: "90%" }}>
-        {/* <div className='row row-cols-1'> */}
-        {/* <Title className='col '>
-                        <img
-                            src='Icons/downArrow.svg'
-                            alt='downArrow'
-                            style={{
-                                marginRight: '15px',
-                                height: '32px',
-                            }}
-                        />
-                        All Restaurants
-                    </Title> */}
+      <div className="container-fluid" style={{ width: matches ? "100%": '90%'}}>
         <div
           // className='col'
           style={{

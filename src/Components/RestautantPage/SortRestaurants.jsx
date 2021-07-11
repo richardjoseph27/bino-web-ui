@@ -3,6 +3,10 @@ import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import { restaurantList } from "../../data/RestaurantList";
 import HotelCard from "./HotelCard";
+import HotelCardMobile from "./HotelCardMobile";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 var axios = require("axios");
 
 const Wrapper = styled.div`
@@ -51,6 +55,8 @@ const Equal = styled.img`
 
 const SortRestaurants = (props) => {
   console.log("props", props.filter, typeof props.filter);
+
+  const matches = useMediaQuery('(max-width:960px)');
   // const { filter } = props.filter;
   const history = useHistory();
   const [data, setData] = useState([]);
@@ -125,7 +131,7 @@ const SortRestaurants = (props) => {
 
   return (
     <Wrapper>
-      <div className="">
+      <div className="d-none d-lg-block">
         <div className="big-box align-self-center">
           <div
             // className="row mb-0 pb-0"
@@ -189,9 +195,12 @@ const SortRestaurants = (props) => {
           display: "flex",
           justifyContent: "space-around",
           flexWrap: "wrap",
+          // backgroundColor:'yellow',
         }}
       >
-        {data.map((item) => (
+        {matches ? data.map((item) => (
+          <HotelCardMobile data={item} key={item._id} />
+        )): data.map((item) => (
           <HotelCard data={item} key={item._id} />
         ))}
       </div>

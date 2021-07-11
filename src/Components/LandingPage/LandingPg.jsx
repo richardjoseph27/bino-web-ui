@@ -5,7 +5,7 @@ import MainFooter from './MainFooter';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const LandingPg = () => {
-    const matches = useMediaQuery('(max-width:1224px)');
+    const matches = useMediaQuery('(max-width:960px)');
     return (
         <>
             <LandingUpper />

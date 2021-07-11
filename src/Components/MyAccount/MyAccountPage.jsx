@@ -60,7 +60,7 @@ const Edit = styled.button`
 const MyAccountPage = () => {
     const [data, setData] = useState({});
     const id = JSON.parse(localStorage.getItem('customerData'))._id;
-    const matches = useMediaQuery('(max-width:1224px)');
+    const matches = useMediaQuery('(max-width:960px)');
 
     useEffect(() => {
         var config = {

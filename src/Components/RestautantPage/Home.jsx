@@ -6,7 +6,7 @@ import MainFooter from '../LandingPage/MainFooter';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 function Home() {
-    const matches = useMediaQuery('(max-width:1224px)');
+    const matches = useMediaQuery('(max-width:960px)');
     return (
         <div>
             <Navigator />

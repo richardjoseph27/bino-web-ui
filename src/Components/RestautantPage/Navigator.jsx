@@ -7,54 +7,59 @@ import { Nav, NavItem} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {LogoLanding} from './../LandingPage/LandingStyledComponents';
 import logoV from '../../images/logo_vertical.png';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const tabs = [{
-    route: "/home",
+    route: "/",
     icon: "fas fa-home",
     label: "Home"
   },{
-    route: "/search",
+    route: "/",
     icon: 'fas fa-search',
-    label: "Search"
+    label: "Categories"
   },{
-    route: "/login",
+    route: "/",
+    icon: 'fas fa-list',
+    label: "Orders"
+  },{
+    route: "/",
     icon: 'fas fa-user-circle',
-    label: "Login"
+    label: "Account"
   }]
 
 const Wrapper = styled.div`
-    overflow: hidden;
-    padding: 10px 0;
+    // overflow: hidden;
+    padding: 20px 0;
     // background: #fff;
-    // box-shadow: 2px 0px 5px #e3e3e3;
-    margin: 0;
-    box-sizzing: border-box;
+    box-shadow: 2px 0px 5px #000000;
+    margin: 0px;
+    // disply:flex;
+    // flex-direction:row;
+    // box-sizzing: border-box;
     font-family: sans-serif;
-
-    .logo-container {
-        padding: 10px;
-    }
+    // .logo-container {
+    //     padding: 50px;
+    // }
 
     .list-inline {
         display: flex;
-        width: 100%;
-        // background-color: lightblue;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 15%;
         align-items: center;
         // justify-content: space-between;
         font-size: 16px;
-        font-weight: 300;
-        line-height: 1.2;
+        // font-weight: 300;
+        // line-height: 1.2;
         color: #686b78;
         cursor: pointer;
         border-radius: 0px;
-        &:hover {
-            border-bottom: 1px solid black;
-        }
+        // &:hover {
+        //     border-bottom: 1px solid black;
+        // }
     }
 
     .nav-item {
-        padding: 10px 10px;
+        // padding: 10px 10px;
         .nav-link {
             text-decoration: none;
             color: #333;
@@ -86,28 +91,13 @@ const Wrapper = styled.div`
       .bottom-nav-link.active {
         color: #922c88;
       }
+      .bottom-nav-link.inactive {
+        color: #2A349066;
+      }
       .bottom-tab-label {
         font-size: 12px;
       }
 
-`;
-
-const nav = styled.nav`
-.navbar {
-    border-bottom: solid 1px #EBEBEB;
-  }
-  .bottom-tab-nav {
-    border-top: solid 1px #EBEBEB;
-  }
-  .bottom-nav-link {
-    color: #55575b;
-  }
-  .bottom-nav-link.active {
-    color: #922c88;
-  }
-  .bottom-tab-label {
-    font-size: 12px;
-  }
 `;
 
 const Address = styled.button`
@@ -160,6 +150,7 @@ function CustomerName({ name }) {
 function Navigator() {
     const [name, setName] = useState('');
     const [placeName, setPlaceName] = useState('');
+    const matches = useMediaQuery('(max-width:960px)');
 
     useEffect(() => {
         if (localStorage.getItem('customerData') == null) {
@@ -179,48 +170,49 @@ function Navigator() {
     console.log(name);
 
     return (
-        <Wrapper className='container-fluid shadow'>
-            <div className='row'>
+        <Wrapper className='container-fluid shadow' style={{display:'flex',flexDirection:'row',justifyContent:'space-between',width:'100%',height:'10%', alignItems:'center'}}>
+            <div className='row' style={{display:'flex',flexDirection:'row',width:'100%', alignItems:'center'}}>
                 <div className='col-lg-6  mt-0'>
-                    <div className='logo-container-fluid'>
-                        <ul className='list-inline'>
-                            <li className='list-inline-item'>
+                    {/* <div > */}
+                        <div style={{display: 'flex',flexDirection:'row',justifyContent:'space-between', width: matches ? '100%':'60%',marginLeft:matches ? 0:'15%',alignItems: 'center',fontSize: '16px',color: '#686b78',cursor: 'pointer'}}>
+                            <div >
                             <Nav className="ml-auto">
                                 <NavItem>
                                 <NavLink
                                     to='/Restaurants'
                                     type='button'
                                 >
-                                        <LogoLanding
+                                        <img
                                             src={logoV}
                                             alt='logo'
+                                            style={{height: '45px', width: 'auto', }}
                                         /> 
                                 </NavLink>
                                 </NavItem>
                                 </Nav>
-                            </li>
-                            <li className='list-inline-item '>
+                            </div>
+                            <div>
                                 <Location />
-                            </li>
+                            </div>
                             <Address
-                                className='list-inline-item text-truncate text-capitalize'
+                                className=' text-truncate text-capitalize'
                                 style={{ maxWidth: '230px' }}
                             >
                                 {/* Karnatak, India */}
                                 {placeName}
                             </Address>
-                            <li className='list-inline-item'>
+                            <div className=''>
                                 <button type='button' className='btn btn-sm'>
                                     <i
                                         className='fas fa-chevron-down'
                                         style={{ color: '#fc8019' }}
                                     ></i>
                                 </button>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </div>
+                    {/* </div> */}
                 </div>
-                <div className='col-lg-6'>
+                {!matches ? <div className='col-lg-6'>
                     <div>
                         <nav className='d-flex' style={{alignItems:'center'}}> 
                             <div className='nav-item '>
@@ -294,10 +286,10 @@ function Navigator() {
                             </div>
                         </nav>
                     </div>
-                </div>
-                <nav className="navbar fixed-bottom navbar-light d-block d-lg-none bottom-tab-nav" role="navigation">
-                    <Nav className="w-100">
-                    <div className=" d-flex flex-row justify-content-around w-100">
+                </div>:
+                <nav className="navbar fixed-bottom navbar-light d-block d-lg-none bottom-tab-nav" role="navigation" style={{padding:0}}>
+                    <Nav>
+                    <div style={{display:'flex', flexDirection:'row', width:'100%', backgroundColor:'#ffffff', alignItems:'center', justifyContent:'space-between'}}>
                         {
                         tabs.map((tab, index) =>(
                             <NavItem key={`tab-${index}`}>
@@ -312,7 +304,7 @@ function Navigator() {
                         }
                     </div>
                     </Nav>
-                </nav>
+                </nav>}
             </div>
         </Wrapper>
     );

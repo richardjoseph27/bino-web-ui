@@ -2,12 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-const Img = styled.img`
+const img = styled.img`
   cursor: pointer;
-  width: 250px;
-  height: 250px;
-
   &:hover {
     transform: scale(1.05);
     transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -49,61 +47,73 @@ const settings = {
 };
 
 function Promotions() {
+  const matches = useMediaQuery('(max-width:960px)');
+  const styles = {
+    carousalImage: { width: matches ? "150px" : "250px",  height: matches ? "150px" : "250px" }
+  };
+
   return (
     <Wrapper>
-      <div style={{ background: "#171a29", padding: "30px 20px" }}>
+      <div style={{ background: "#171a29", padding: matches ? "10px 10px" : "30px 20px"}}>
         <div className="container">
           <AliceCarousel
             {...settings}
             items={[
-              <Img
+              <img
+                style={styles.carousalImage}
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/jkcbdbr3qdjuzgjepkjx"
                 alt="promotion img"
               />,
-              <Img
+              <img
+              style={styles.carousalImage}
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/xax7qfs6dbmzdmzxq1dh"
                 alt="promotion img"
               />,
-              <Img
+              <img
+              style={styles.carousalImage}
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/c59djn2nskqlf0ork6wc"
                 alt="promotion img"
               />,
-              <Img
+              <img
+              style={styles.carousalImage}
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/qd0mwkv1mk3bxyy3x5fm"
                 alt="promotion img"
               />,
-              <Img
+              <img
+              style={styles.carousalImage}
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/rl8zesrkte88twzgbma5"
                 alt="promotion img"
               />,
-              <Img
+              <img
+              style={styles.carousalImage}
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/lgxbfmjfi9ba7sqbliek"
                 alt="promotion img"
               />,
-              <Img
+              <img
+              style={styles.carousalImage}
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ztpd5q9awnmmnefczn5x"
                 alt="promotion img"
               />,
-              <Img
-                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/jcjcvebiczqe5jr2vijo"
-                alt="promotion img"
-              />,
-              <Img
-                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rs4krvosxjt6i5wyefvy"
-                alt="promotion img"
-              />,
-              <Img
-                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/kmewp8efed0ev7yvfyx6"
-                alt="promotion img"
-              />,
-              <Img
-                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/marketing-dashboard/carousel/e8qsywpath9uli7tnikc"
-                alt="promotion img"
-              />,
-              <Img
-                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/marketing-dashboard/carousel/bmp2yqaaqouptllxmkei"
-                alt="promotion img"
-              />,
+              // <Img
+              //   src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/jcjcvebiczqe5jr2vijo"
+              //   alt="promotion img"
+              // />,
+              // <Img
+              //   src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rs4krvosxjt6i5wyefvy"
+              //   alt="promotion img"
+              // />,
+              // <Img
+              //   src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/kmewp8efed0ev7yvfyx6"
+              //   alt="promotion img"
+              // />,
+              // <Img
+              //   src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/marketing-dashboard/carousel/e8qsywpath9uli7tnikc"
+              //   alt="promotion img"
+              // />,
+              // <Img
+              //   src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/marketing-dashboard/carousel/bmp2yqaaqouptllxmkei"
+              //   alt="promotion img"
+              // />,
             ]}
           />
         </div>
@@ -113,3 +123,5 @@ function Promotions() {
 }
 
 export default Promotions;
+
+
