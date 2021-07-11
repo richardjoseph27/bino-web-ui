@@ -254,7 +254,7 @@ function Menupages() {
           {/* </div> */}
         </div>
       </Wrapper>
-      <MenuWrapper>
+      <MenuWrapper className="mx-2">
         <div
           className="flex-center"
           style={{

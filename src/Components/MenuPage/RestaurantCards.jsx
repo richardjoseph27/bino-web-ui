@@ -64,7 +64,7 @@ const Wrapper = styled.div`
     margin-right: 0;
     border: none;
     background: white;
-    padding: 5%;
+    padding: 0.4em 0.7em 0.4em 0.7em;
     color: green;
   }
 
@@ -168,7 +168,7 @@ function RestaurantCards(props) {
       <div className="menu-image position-relative">
         <img src={data.img_url} alt="item" className="p-2" />
         <div>
-          {productInCart && productInCart.qty === 0 ? (
+          {productInCart && productInCart.qty == 0 ? (
             <div
               className="addCart mx-4 text-center py-2 text-success"
               onClick={() => handleAdd(data)}
@@ -176,7 +176,7 @@ function RestaurantCards(props) {
               ADD
             </div>
           ) : (
-            <div className="addCart">
+            <div className="addCart mx-4 text-center">
               <button className="buttoncart" onClick={() => handleDec()}>
                 -
               </button>

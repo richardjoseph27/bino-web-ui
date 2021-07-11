@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   font-family: sans-serif;
-  margin-left: 4em;
   height: 280px;
   width: 280px;
 
@@ -20,7 +19,6 @@ const Wrapper = styled.div`
   }
 
   @media only screen and (max-width: 850px) {
-    margin-left: 2em;
     height: 200px;
     width: 200px;
 
