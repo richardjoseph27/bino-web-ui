@@ -23,6 +23,15 @@ const Wrapper = styled.div`
     }
 `;
 
+const dLine=styled.div`
+    // position: absolute;
+    border-left: 1px dashed #282c3f;
+    // top: 35px;
+    // left: -10px;
+    // bottom: -57px;
+    //style={{borderLeft: '1px dashed #282c3f'}}
+`;
+
 const CheckoutPage = (props) => {
     console.log(props.location.isAddrSelected);
     const [isAddrSelected, setIsAddrSelected] = useState(false);
@@ -37,9 +46,9 @@ const CheckoutPage = (props) => {
             <CheckoutNavigator />
             <Wrapper className='container-fluid'>
                 <div className='container'>
-                    <div className='row'>
+                    <div className='row' >
                         <div className='col-8'>
-                            <div className='row row-cols-1 text-left'>
+                            <div className='row row-cols-1 text-left' >
                                 <div className='col'>
                                     <Login />
                                 </div>

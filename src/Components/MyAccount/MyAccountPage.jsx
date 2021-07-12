@@ -59,10 +59,12 @@ const Edit = styled.button`
 
 const MyAccountPage = () => {
     const [data, setData] = useState({});
-    const id = JSON.parse(localStorage.getItem('customerData'))._id;
+    //TODO
+    // const id = JSON.parse(localStorage.getItem('customerData'))._id;
+    const id = 1//JSON.parse(localStorage.getItem('customerData'))._id;
     const matches = useMediaQuery('(max-width:960px)');
 
-    useEffect(() => {
+    /*useEffect(() => {
         var config = {
             method: 'get',
             url: `http://localhost:5000/api/customer/order/${id}`,
@@ -78,7 +80,7 @@ const MyAccountPage = () => {
                 console.log(error.response.data);
             });
     }, []);
-    console.log(data);
+    console.log(data);*/
     return (
         <>
             <MyAccNavigator />
@@ -89,7 +91,8 @@ const MyAccountPage = () => {
                             <div className='row'>
                                 <div className='col'>
                                     <div className='col text-left text-capitalize'>
-                                        {data.name}
+                                    {'Richard'} 
+                                        {/* {data.name} TODO*/}
                                     </div>
                                     <div class='w-100'></div>
                                     <p
@@ -99,7 +102,9 @@ const MyAccountPage = () => {
                                             fontWeight: 300,
                                         }}
                                     >
-                                        {data.phoneNumber}{' '}
+                                        {'9623311498'} 
+                                        {/* {data.phoneNumber} TODO*/}
+                                        {' '}
                                         <span
                                             className='align-items-end mb-2 mr-3 ml-3'
                                             style={{
@@ -108,7 +113,8 @@ const MyAccountPage = () => {
                                         >
                                             |
                                         </span>{' '}
-                                        {data.email}
+                                        {'richardjoseph27@gmail.com'}
+                                        {/* {data.email} TODO */}
                                     </p>
                                 </div>
                                 <div className='col-md-auto align-self-center'>

@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import TextField from '@material-ui/core/TextField';
 import Map from './Map';
 import { useHistory } from 'react-router-dom';
+import { CustomInputField } from '../../../CommonComponents';
 
 const Wrapper = styled.div`
     font-family: system-ui !important;
@@ -163,9 +164,13 @@ export default function TemporaryDrawer() {
         const userLoc = {
             flat_no: flatNo,
             landmark: landmark,
-            place_name: data.place_name,
-            long: data.long,
-            lat: data.lat,
+            //TODO
+            place_name: 'Pune',
+            long: '73.787679',
+            lat: '18.633725',
+            // place_name: data.place_name,
+            // long: data.long,
+            // lat: data.lat,
             type: type,
         };
 
@@ -219,11 +224,12 @@ export default function TemporaryDrawer() {
                     <div
                         className='col mt-5 pt-5'
                         style={{
-                            paddingLeft: '15px',
-                            paddingRight: '15px',
+                            // paddingLeft: '15px',
+                            // paddingRight: '15px',
                         }}
                     >
-                        <TextField
+                        <CustomInputField label='Door/Flat No. richard' onChange={(id, value) => setFlatNo(value)}/>
+                        {/* <TextField
                             label='Door/Flat No.'
                             placeholder=''
                             fullWidth
@@ -235,16 +241,17 @@ export default function TemporaryDrawer() {
                             onChange={(e) => {
                                 setFlatNo(e.target.value);
                             }}
-                        />
+                        /> */}
                     </div>
                     <div
                         className='col pt-2'
                         style={{
-                            paddingLeft: '15px',
-                            paddingRight: '15px',
+                            // paddingLeft: '15px',
+                            // paddingRight: '15px',
                         }}
                     >
-                        <TextField
+                         <CustomInputField label='Landmark' onChange={(id, value) => setLandmark(value)}/>
+                        {/* <TextField
                             label='Landmark'
                             placeholder=''
                             fullWidth
@@ -256,7 +263,7 @@ export default function TemporaryDrawer() {
                             onChange={(e) => {
                                 setLandmark(e.target.value);
                             }}
-                        />
+                        /> */}
                     </div>
                     <div className='col'>
                         <div className='container'>

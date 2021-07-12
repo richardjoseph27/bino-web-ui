@@ -149,7 +149,7 @@ function Menupages() {
     <div>
       <Navigator />
       <Wrapper>
-        <div className="thin">
+        {/* <div className="thin">
           <div className="">
             <div className="col-12 my-1 text-left">
               <small
@@ -163,13 +163,15 @@ function Menupages() {
               </small>
             </div>
           </div>
-        </div>
+        </div> */}
+        {/* TODO */}
         <div className="middlePart flex-center">
           <img src={data.img_url} alt="restaurantImage" />
           <div className="vendorInfo text-left">
             <h1>{data.name}</h1>
+            {/* <h1>{'Richard'}</h1> */}
             <div>{data.cuisines.join(", ")}</div>
-            <div className="my-2">Koramangala,Bangalore</div>
+            <div className="my-2">Magarpatta city,</div>
             <div className="flex-center vendor-extra-info text-left mt-3">
               <div
                 className="extraInfo"

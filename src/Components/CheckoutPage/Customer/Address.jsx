@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 `;
 
 const Logo = styled.div`
-    left: -35px;
+    left: -5%;
     // top: 10px;
     // position: absolute;
     width: 0px;

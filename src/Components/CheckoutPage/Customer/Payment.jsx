@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 `;
 
 const Logo = styled.div`
-    left: -35px;
+    left: -5%;
     width: 0px;
     height: 0px;
     background-color: #282c3f;
@@ -64,8 +64,9 @@ function Payment() {
     );
 
     async function handlePayment(e) {
+        history.push('/Confirmation');
         // console.log(Total);
-        e.preventDefault();
+        /*e.preventDefault();
 
         const API_URL = `${process.env.REACT_APP_API_URL}/api/razor/`;
         const orderUrl = `${API_URL}order/${Total}`;
@@ -98,7 +99,7 @@ function Payment() {
             },
         };
         const rzp1 = new window.Razorpay(options);
-        rzp1.open();
+        rzp1.open();*/
     }
 
     const handleData = () => {
@@ -164,22 +165,21 @@ function Payment() {
                                     <Title>Payment</Title>
                                 </div>
                                 <WarningText className='col-10 ml-3 mb-3 '>
-                                    Please use RazorPay as Payment method as
-                                    other services are under Maintenance.
+                                    Please use BinoPay for a a secured and smooth payment experience.
                                 </WarningText>
                                 <button
-                                    className='btn btn-success btn-sm col-3 ml-3 mt-4'
+                                    className='btn btn-success btn-md col-10 ml-3 mt-2'
                                     onClick={handlePayment}
                                     // onClick={handleData}
-                                >
-                                    <img
+                                >Pay now with BinoPay&#8482; 
+                                    {/* <img
                                         src='https://razorpay.com/assets/razorpay-logo-white.svg'
                                         alt='RazorPay'
                                         style={{
                                             width: 'inherit',
                                             height: 'inherit',
                                         }}
-                                    />
+                                    /> */}
                                 </button>
                             </div>
                         </div>

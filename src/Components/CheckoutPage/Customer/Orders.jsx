@@ -63,20 +63,12 @@ const Wrapper3 = styled.div`
 const SuggessionsWrapper = styled.div`
   cursor: pointer;
   background: #e9ecee;
-  padding: 10px;
-  margin: 20px;
+  // padding: 10px;
+  // margin: 20px;
   margin-right: 0px !important;
   margin-left: 0px !important;
-  height: 45px;
+  // height: 45px;
   margin-bottom: 20px;
-`;
-
-const Quotes = styled.img`
-  width: 11px;
-  height: 11px;
-  margin-top: 8px;
-  margin-right: 6px;
-  margin-left: 8px;
 `;
 
 const NoContactWrapper = styled.div`
@@ -111,10 +103,10 @@ const Text = styled.p`
   margin-bottom: 0px !important;
 `;
 
-const CouponWrapper = styled.div`
+const CouponWrapperD = styled.div`
   cursor: pointer;
   border: 1px dashed #a9abb2;
-  padding: 10px;
+  // padding: 10px;
   // margin: 20px;
   margin-right: 0px !important;
   margin-left: 0px !important;
@@ -159,10 +151,10 @@ const Orders = () => {
           </div>
           <div class="w-100"></div>
           <div className="col">
-            <SuggessionsWrapper className="row text-muted text-center">
+            <SuggessionsWrapper className="row text-muted">
               {" "}
-              <Quotes src="/Icons/left.svg" alt="quotes" />
-              <p className="mt-1">Any Suggestions? We will pass it on...</p>
+              <i class="fas fa-quote-left mt-2"></i>
+              <p className="mt-1 ml-4">Any Suggestions? We will pass it on...</p>
             </SuggessionsWrapper>
           </div>
           <div class="w-100"></div>
@@ -194,19 +186,20 @@ const Orders = () => {
           </div>
           <div class="w-100"></div>
           <div className="col">
-            <CouponWrapper className="row text-muted text-center">
+            <div  style={{display:'flex', flexDirection:'row',height:'55px', alignItems:'center', border:'1px dashed #a9abb2', padding:'10px', marginBottom:'20px'}}>
               {" "}
               <img
                 src="percentage.svg"
                 alt="percentage"
                 width="20px"
+                height='20px'
                 style={{
                   marginRight: "10px",
                   marginLeft: "5px",
                 }}
-              />{" "}
-              <Title className="mt-2">Apply Coupon</Title>
-            </CouponWrapper>
+              />
+              <Title className="mt-0">Apply Coupon</Title>
+            </div>
           </div>
           <div class="w-100"></div>
           <div className="col mb-2">

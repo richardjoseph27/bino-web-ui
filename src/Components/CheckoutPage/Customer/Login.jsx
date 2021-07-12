@@ -22,7 +22,7 @@ const Title = styled.p`
 `;
 
 const Logo = styled.div`
-    left: -35px;
+    left: -5%;
     width: 0px;
     height: 0px;
     background-color: #282c3f;
@@ -62,14 +62,14 @@ const Login = () => {
         <>
             <Wrapper className='container'>
                 <div className='row'>
-                    <Logo className='col-1'>
+                    <Logo className='col-1 mr-50'>
                         <Avatar src='Icons/avatar.svg' alt='avatar' />
                     </Logo>
                     <div className='col-11'>
                         <div className='row row-cols-1'>
                             <div className='col'>
                                 <Title>
-                                    Logged in
+                                    Logged in checkout
                                     <Tick
                                         src='Icons/checkmark.svg'
                                         alt='Check'
@@ -79,14 +79,17 @@ const Login = () => {
                             <div className='col'>
                                 <Info>
                                     {' '}
-                                    {data.name}{' '}
+                                    {'Richard'}
+                                    {/* {data.name} */}
+                                    {' '}
                                     <img
                                         src='Icons/line.svg'
                                         alt='line'
                                         height='13px'
                                         style={{ verticalAlign: 'inherit' }}
                                     />{' '}
-                                    {data.phoneNumber}
+                                    {'9623311498'}
+                                    {/* {data.phoneNumber} */}
                                 </Info>
                             </div>
                         </div>

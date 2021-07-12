@@ -63,7 +63,8 @@ function MyAccNavigator() {
     const [name, setName] = useState('');
 
     useEffect(() => {
-        setName(JSON.parse(localStorage.getItem('customerData')).name);
+        // setName(JSON.parse(localStorage.getItem('customerData')).name); TODO
+        setName('Richard')
     }, []);
     console.log(name);
 

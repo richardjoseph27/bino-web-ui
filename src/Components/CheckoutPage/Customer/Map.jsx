@@ -7,6 +7,7 @@ import ReactMapGL, {
 import styled from 'styled-components';
 import axios from 'axios';
 import TextField from '@material-ui/core/TextField';
+import { CustomInputField } from '../../../CommonComponents';
 
 const Loc = styled.img`
     height: 20px;
@@ -125,23 +126,25 @@ const Map = () => {
                 </div>
             </ReactMapGL>
             <div
-                className='col mb-5'
+                className='col'
                 style={{
-                    padding: '0px',
+                    padding: '1px',
+                    marginTop: '5%',
                 }}
             >
-                <TextField
+                <CustomInputField label='Address' value={placeName}/>
+                {/* <TextField
                     label='Address'
                     placeholder=''
                     fullWidth
                     variant='outlined'
                     style={{
                         marginLeft: '0px',
-                        marginTop: '5px',
+                        marginTop: '10px',
                         borderRadius: '0px',
                     }}
                     value={placeName}
-                />
+                /> */}
             </div>
         </>
     );

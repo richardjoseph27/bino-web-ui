@@ -48,21 +48,22 @@ const Container = () => {
     const [data, setData] = useState({});
 
     useEffect(() => {
-        const id = JSON.parse(localStorage.getItem('customerData'))._id;
-        var config = {
-            method: 'get',
-            url: `http://localhost:5000/api/customer/order/${id}`,
-            headers: {},
-        };
+        setData(null);
+        // const id = JSON.parse(localStorage.getItem('customerData'))._id;
+        // var config = {
+        //     method: 'get',
+        //     url: `http://localhost:5000/api/customer/order/${id}`,
+        //     headers: {},
+        // };
 
-        axios(config)
-            .then(function (response) {
-                console.log(JSON.stringify(response.data));
-                setData(response.data);
-            })
-            .catch(function (error) {
-                console.log(error.response.data);
-            });
+        // axios(config)
+        //     .then(function (response) {
+        //         console.log(JSON.stringify(response.data));
+        //         setData(response.data);
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error.response.data);
+        //     });
     }, []);
     console.log(data);
     return (
@@ -125,11 +126,11 @@ const Container = () => {
                             Orders
                         </div>
                         <div className='w-100'></div>
-                        <div className='col row-cols-1'>
+                        {/* TODO <div className='col row-cols-1'>
                             {data.orders &&
                                 data.orders
                                     .map((item) => <OrderCard data={item} />)}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

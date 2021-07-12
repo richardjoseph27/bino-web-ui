@@ -153,14 +153,15 @@ function Navigator() {
     const matches = useMediaQuery('(max-width:960px)');
 
     useEffect(() => {
+        //TODO
         if (localStorage.getItem('customerData') == null) {
-            setName('');
+            setName('Richard');
         } else {
             setName(JSON.parse(localStorage.getItem('customerData')).name);
         }
 
         if (localStorage.getItem('Coordinates') == null) {
-            setPlaceName('Karnatak, India');
+            setPlaceName('Pune, India');
         } else {
             setPlaceName(
                 JSON.parse(localStorage.getItem('Coordinates')).place_name,
