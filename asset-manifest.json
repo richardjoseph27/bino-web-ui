@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bino-web-ui/static/css/main.923535e6.chunk.css",
-    "main.js": "/bino-web-ui/static/js/main.b2964d7d.chunk.js",
-    "main.js.map": "/bino-web-ui/static/js/main.b2964d7d.chunk.js.map",
+    "main.js": "/bino-web-ui/static/js/main.a62a45de.chunk.js",
+    "main.js.map": "/bino-web-ui/static/js/main.a62a45de.chunk.js.map",
     "runtime-main.js": "/bino-web-ui/static/js/runtime-main.8ddbedc7.js",
     "runtime-main.js.map": "/bino-web-ui/static/js/runtime-main.8ddbedc7.js.map",
     "static/css/2.82eb70c8.chunk.css": "/bino-web-ui/static/css/2.82eb70c8.chunk.css",
@@ -43,6 +43,6 @@
     "static/css/2.82eb70c8.chunk.css",
     "static/js/2.328108a9.chunk.js",
     "static/css/main.923535e6.chunk.css",
-    "static/js/main.b2964d7d.chunk.js"
+    "static/js/main.a62a45de.chunk.js"
   ]
 }
