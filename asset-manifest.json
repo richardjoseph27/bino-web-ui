@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/richardjoseph27/bino-web-ui/static/css/main.923535e6.chunk.css",
+    "main.js": "/richardjoseph27/bino-web-ui/static/js/main.d57ecc09.chunk.js",
+    "main.js.map": "/richardjoseph27/bino-web-ui/static/js/main.d57ecc09.chunk.js.map",
+    "runtime-main.js": "/richardjoseph27/bino-web-ui/static/js/runtime-main.93e20853.js",
+    "runtime-main.js.map": "/richardjoseph27/bino-web-ui/static/js/runtime-main.93e20853.js.map",
+    "static/css/2.82eb70c8.chunk.css": "/richardjoseph27/bino-web-ui/static/css/2.82eb70c8.chunk.css",
+    "static/js/2.b75b5637.chunk.js": "/richardjoseph27/bino-web-ui/static/js/2.b75b5637.chunk.js",
+    "static/js/2.b75b5637.chunk.js.map": "/richardjoseph27/bino-web-ui/static/js/2.b75b5637.chunk.js.map",
+    "static/js/3.51007a39.chunk.js": "/richardjoseph27/bino-web-ui/static/js/3.51007a39.chunk.js",
+    "static/js/3.51007a39.chunk.js.map": "/richardjoseph27/bino-web-ui/static/js/3.51007a39.chunk.js.map",
+    "index.html": "/richardjoseph27/bino-web-ui/index.html",
+    "static/css/2.82eb70c8.chunk.css.map": "/richardjoseph27/bino-web-ui/static/css/2.82eb70c8.chunk.css.map",
+    "static/css/main.923535e6.chunk.css.map": "/richardjoseph27/bino-web-ui/static/css/main.923535e6.chunk.css.map",
+    "static/js/2.b75b5637.chunk.js.LICENSE.txt": "/richardjoseph27/bino-web-ui/static/js/2.b75b5637.chunk.js.LICENSE.txt",
+    "static/media/appSSDetails.195e9d5d.png": "/richardjoseph27/bino-web-ui/static/media/appSSDetails.195e9d5d.png",
+    "static/media/appSSMain.e67abcd2.png": "/richardjoseph27/bino-web-ui/static/media/appSSMain.e67abcd2.png",
+    "static/media/logo_horizontal.1c4fbf94.png": "/richardjoseph27/bino-web-ui/static/media/logo_horizontal.1c4fbf94.png",
+    "static/media/logo_vertical.d02556f6.png": "/richardjoseph27/bino-web-ui/static/media/logo_vertical.d02556f6.png",
+    "static/media/veg_logo.a98c910e.png": "/richardjoseph27/bino-web-ui/static/media/veg_logo.a98c910e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.93e20853.js",
+    "static/css/2.82eb70c8.chunk.css",
+    "static/js/2.b75b5637.chunk.js",
+    "static/css/main.923535e6.chunk.css",
+    "static/js/main.d57ecc09.chunk.js"
+  ]
+}
