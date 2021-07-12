@@ -26,8 +26,10 @@ const Map = () => {
     const [viewPort, setViewPort] = useState({
         width: 'inherit',
         height: 'inherit',
-        latitude: data.lat, // 18.634363666666665  initially showing  Area Search Coordinates
-        longitude: data.long, // 73.78761533333333
+        //TODO latitude: data.lat, // 18.634363666666665  initially showing  Area Search Coordinates
+        // longitude: data.long, // 73.78761533333333
+        latitude:  18.634363666666665,
+        longitude: 73.78761533333333,
         zoom: 10,
     });
 
@@ -106,7 +108,8 @@ const Map = () => {
                     longitude={data.long}
                 >
                     <Loc src={mapbox} alt='location' />
-                    {data.area}
+                    {/* TODO{data.area} */}
+                    {'Magarpatta, Pune'}
                 </Marker>
                 <GeolocateControl
                     style={geolocateStyle}
