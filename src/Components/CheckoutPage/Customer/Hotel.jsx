@@ -37,12 +37,13 @@ const Hotel = () => {
     useEffect(() => {
         setHotelName(JSON.parse(localStorage.getItem('hotel')).name);
         setHotelImg(JSON.parse(localStorage.getItem('hotel')).img_url);
-        setHotelArea(
-            () =>
-                `${JSON.parse(localStorage.getItem('Coordinates')).area}, ${
-                    JSON.parse(localStorage.getItem('Coordinates')).place_name
-                }`,
-        );
+        // setHotelArea(
+        //     () =>
+        //         `${JSON.parse(localStorage.getItem('Coordinates')).area}, ${
+        //             JSON.parse(localStorage.getItem('Coordinates')).place_name
+        //         }`,
+        // );TODO
+        setHotelArea('Pune')
     });
 
     return (
