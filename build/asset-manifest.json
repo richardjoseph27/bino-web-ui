@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.556aee3b.chunk.css",
-    "main.js": "/static/js/main.b51b7ae8.chunk.js",
-    "main.js.map": "/static/js/main.b51b7ae8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6d8eb924.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6d8eb924.js.map",
-    "static/css/2.165ff965.chunk.css": "/static/css/2.165ff965.chunk.css",
-    "static/js/2.d98d35ba.chunk.js": "/static/js/2.d98d35ba.chunk.js",
-    "static/js/2.d98d35ba.chunk.js.map": "/static/js/2.d98d35ba.chunk.js.map",
-    "static/js/3.74120f30.chunk.js": "/static/js/3.74120f30.chunk.js",
-    "static/js/3.74120f30.chunk.js.map": "/static/js/3.74120f30.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.165ff965.chunk.css.map": "/static/css/2.165ff965.chunk.css.map",
-    "static/css/main.556aee3b.chunk.css.map": "/static/css/main.556aee3b.chunk.css.map",
-    "static/js/2.d98d35ba.chunk.js.LICENSE.txt": "/static/js/2.d98d35ba.chunk.js.LICENSE.txt",
-    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf"
+    "main.css": "/bino-web-ui/static/css/main.923535e6.chunk.css",
+    "main.js": "/bino-web-ui/static/js/main.d57ecc09.chunk.js",
+    "main.js.map": "/bino-web-ui/static/js/main.d57ecc09.chunk.js.map",
+    "runtime-main.js": "/bino-web-ui/static/js/runtime-main.8ddbedc7.js",
+    "runtime-main.js.map": "/bino-web-ui/static/js/runtime-main.8ddbedc7.js.map",
+    "static/css/2.82eb70c8.chunk.css": "/bino-web-ui/static/css/2.82eb70c8.chunk.css",
+    "static/js/2.5bf854fb.chunk.js": "/bino-web-ui/static/js/2.5bf854fb.chunk.js",
+    "static/js/2.5bf854fb.chunk.js.map": "/bino-web-ui/static/js/2.5bf854fb.chunk.js.map",
+    "static/js/3.51007a39.chunk.js": "/bino-web-ui/static/js/3.51007a39.chunk.js",
+    "static/js/3.51007a39.chunk.js.map": "/bino-web-ui/static/js/3.51007a39.chunk.js.map",
+    "index.html": "/bino-web-ui/index.html",
+    "static/css/2.82eb70c8.chunk.css.map": "/bino-web-ui/static/css/2.82eb70c8.chunk.css.map",
+    "static/css/main.923535e6.chunk.css.map": "/bino-web-ui/static/css/main.923535e6.chunk.css.map",
+    "static/js/2.5bf854fb.chunk.js.LICENSE.txt": "/bino-web-ui/static/js/2.5bf854fb.chunk.js.LICENSE.txt",
+    "static/media/appSSDetails.195e9d5d.png": "/bino-web-ui/static/media/appSSDetails.195e9d5d.png",
+    "static/media/appSSMain.e67abcd2.png": "/bino-web-ui/static/media/appSSMain.e67abcd2.png",
+    "static/media/logo_horizontal.1c4fbf94.png": "/bino-web-ui/static/media/logo_horizontal.1c4fbf94.png",
+    "static/media/logo_vertical.d02556f6.png": "/bino-web-ui/static/media/logo_vertical.d02556f6.png",
+    "static/media/veg_logo.a98c910e.png": "/bino-web-ui/static/media/veg_logo.a98c910e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6d8eb924.js",
-    "static/css/2.165ff965.chunk.css",
-    "static/js/2.d98d35ba.chunk.js",
-    "static/css/main.556aee3b.chunk.css",
-    "static/js/main.b51b7ae8.chunk.js"
+    "static/js/runtime-main.8ddbedc7.js",
+    "static/css/2.82eb70c8.chunk.css",
+    "static/js/2.5bf854fb.chunk.js",
+    "static/css/main.923535e6.chunk.css",
+    "static/js/main.d57ecc09.chunk.js"
   ]
 }
