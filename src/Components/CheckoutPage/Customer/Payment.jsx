@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useSelector } from 'react-redux';
 // import Confirmation from "./Confirmation";
 import { useHistory } from 'react-router-dom';
+import wallet from '../../../images/wallet.svg';
 
 const Wrapper = styled.div`
     font-family: system-ui !important;
@@ -157,7 +158,7 @@ function Payment() {
                 <Wrapper className='container'>
                     <div className='row'>
                         <Logo className='col-1'>
-                            <Wallet src='Icons/wallet.svg' alt='placeholder' />
+                            <Wallet src={wallet} alt='placeholder' />
                         </Logo>
                         <div className='col-11'>
                             <div className='row row-cols-1'>

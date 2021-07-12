@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import axios from 'axios';
 import TextField from '@material-ui/core/TextField';
 import { CustomInputField } from '../../../CommonComponents';
+import mapbox from '../../../images/mapbox.svg';
 
 const Loc = styled.img`
     height: 20px;
@@ -104,7 +105,7 @@ const Map = () => {
                     latitude={data.lat}
                     longitude={data.long}
                 >
-                    <Loc src='/Icons/mapbox.svg' alt='location' />
+                    <Loc src={mapbox} alt='location' />
                     {data.area}
                 </Marker>
                 <GeolocateControl

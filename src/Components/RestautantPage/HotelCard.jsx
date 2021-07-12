@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 // import { Link } from 'react-router-dom';
 import { useHistory } from "react-router-dom";
+import discountBadge from '../../images/discountBadge.svg';
 
 const Div = styled.div`
   font-family: sans-serif !important;
@@ -105,7 +106,7 @@ const HotelCard = (props) => {
               <div className="dropdown-divider"></div>
               <Discount className="font-weight-normal">
                 <img
-                  src="discountBadge.svg"
+                  src={discountBadge}
                   alt="discountBadge"
                   width="15px"
                   style={{

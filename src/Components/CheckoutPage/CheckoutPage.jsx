@@ -33,7 +33,7 @@ const dLine=styled.div`
 `;
 
 const CheckoutPage = (props) => {
-    console.log(props.location.isAddrSelected);
+    // console.log(props.location.isAddrSelected);
     const [isAddrSelected, setIsAddrSelected] = useState(false);
     const matches = useMediaQuery('(max-width:960px)');
 

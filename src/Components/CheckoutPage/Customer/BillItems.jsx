@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import nonveg from '../../../images/nonveg.png';
+import veg from '../../../images/veg.png';
 
 const Wrapper = styled.div`
     div {
@@ -22,7 +24,7 @@ const BillItems = (props) => {
                     <div className='col-1'>
                         {data.veg ? (
                             <img
-                                src='/Icons/veg.png'
+                                src={veg}
                                 alt='veg'
                                 style={{
                                     width: '15px',
@@ -33,7 +35,7 @@ const BillItems = (props) => {
                             />
                         ) : (
                             <img
-                                src='/Icons/nonveg.png'
+                                src={nonveg}
                                 alt='non-veg'
                                 style={{
                                     width: '15px',

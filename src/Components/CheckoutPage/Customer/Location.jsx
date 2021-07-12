@@ -7,6 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import Map from './Map';
 import { useHistory } from 'react-router-dom';
 import { CustomInputField } from '../../../CommonComponents';
+import location from '../../../images/location.svg';
 
 const Wrapper = styled.div`
     font-family: system-ui !important;
@@ -316,7 +317,7 @@ export default function TemporaryDrawer() {
                 onClick={toggleDrawer('left', true)}
             >
                 <div className='col-1'>
-                    <AddLocation src='Icons/location.svg' alt='placeholder' />
+                    <AddLocation src={location} alt='placeholder' />
                 </div>
                 <div className='col '>
                     <div className=' row row-cols-1'>

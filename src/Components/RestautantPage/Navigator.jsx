@@ -7,6 +7,7 @@ import { Nav, NavItem} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {LogoLanding} from './../LandingPage/LandingStyledComponents';
 import logoV from '../../images/logo_vertical.png';
+import percentage from '../../images/percentage.svg';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const tabs = [{
@@ -236,7 +237,7 @@ function Navigator() {
                                  type='button'
                                 className='nav-link'>
                                     <img
-                                        src='percentage.svg'
+                                        src={percentage}
                                         alt='percentage'
                                         width='20px'
                                         style={{

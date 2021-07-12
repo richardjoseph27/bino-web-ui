@@ -6,6 +6,8 @@ import HotelCard from "./HotelCard";
 import HotelCardMobile from "./HotelCardMobile";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import equal from '../../images//equal.svg';
+import filterImg from '../../images/filter.svg';
 
 var axios = require("axios");
 
@@ -144,7 +146,7 @@ const SortRestaurants = (props) => {
             {/* <div className="col-md-8"> */}
             <h3 className="text-left">
               <button className="btn btn-sm" onClick={allData}>
-                <Equal src="/Icons/equal.svg" alt="restaurant" />
+                <Equal src={equal} alt="restaurant" />
               </button>
               {totalRestaurants} restaurants
             </h3>
@@ -172,7 +174,7 @@ const SortRestaurants = (props) => {
               <button className="list-inline-item btn filter">
                 Filters
                 <img
-                  src="Icons/filter.svg"
+                  src={filterImg}
                   alt="filter icon"
                   style={{
                     width: "30px",

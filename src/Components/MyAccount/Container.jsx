@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import OrderCard from './OrderCard';
 import styled from 'styled-components';
 import axios from 'axios';
+import orders from '../../images/orders.svg';
+import favorites from '../../images/favorites.svg'
+import payment from '../../images/payment.svg'
+import address from '../../images/address.svg'
 
 const Wrapper = styled.div`
     font-family: ProximaNova, Arial, Helvetica Neue, sans-serif;
@@ -89,7 +93,7 @@ const Container = () => {
                                     color: '#171a29',
                                 }}
                             >
-                                <Icon src='Icons/orders.svg' alt='orders' />
+                                <Icon src={orders} alt='orders' />
                                 orders
                             </Title>
                         </div>
@@ -97,7 +101,7 @@ const Container = () => {
                             <Title>
                                 {' '}
                                 <Icon
-                                    src='Icons/favorites.svg'
+                                    src={favorites}
                                     alt='favorites'
                                 />
                                 favorites
@@ -106,14 +110,14 @@ const Container = () => {
                         <div className='col text-muted'>
                             <Title>
                                 {' '}
-                                <Icon src='Icons/payment.svg' alt='payments' />
+                                <Icon src={payment} alt='payments' />
                                 payments
                             </Title>
                         </div>
                         <div className='col text-muted'>
                             <Title>
                                 {' '}
-                                <Icon src='Icons/address.svg' alt='address' />
+                                <Icon src={address} alt='address' />
                                 addresses
                             </Title>
                         </div>

@@ -170,7 +170,8 @@ function RestaurantCards(props) {
         <div>
           {productInCart && productInCart.qty == 0 ? (
             <div
-              className="addCart mx-4 text-center py-2 text-success"
+              className="addCart mx-4 text-center py-2 text-success" style={{cursor: 'pointer'}}
+              
               onClick={() => handleAdd(data)}
             >
               ADD

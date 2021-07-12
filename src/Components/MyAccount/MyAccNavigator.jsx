@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import {LogoLanding} from './../LandingPage/LandingStyledComponents';
 import logoV from '../../images/logo_vertical.png';
+import percentage from '../../images/percentage.svg';
 
 const Wrapper = styled.div`
     overflow: hidden;
@@ -103,7 +104,7 @@ function MyAccNavigator() {
                             <div className='nav-item'>
                                 <Link className='nav-link'>
                                     <img
-                                        src='percentage.svg'
+                                        src={percentage}
                                         alt='percentage'
                                         width='20px'
                                         style={{

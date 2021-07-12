@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import avatar from '../../../images/avatar.svg';
+import checkmark from '../../../images/checkmark.svg';
+import line from '../../../images/line.svg';
 
 const Wrapper = styled.div`
     font-family: system-ui !important;
@@ -63,7 +66,7 @@ const Login = () => {
             <Wrapper className='container'>
                 <div className='row'>
                     <Logo className='col-1 mr-50'>
-                        <Avatar src='Icons/avatar.svg' alt='avatar' />
+                        <Avatar src={avatar} alt='avatar' />
                     </Logo>
                     <div className='col-11'>
                         <div className='row row-cols-1'>
@@ -71,7 +74,7 @@ const Login = () => {
                                 <Title>
                                     Logged in checkout
                                     <Tick
-                                        src='Icons/checkmark.svg'
+                                        src={checkmark}
                                         alt='Check'
                                     />
                                 </Title>
@@ -83,7 +86,7 @@ const Login = () => {
                                     {/* {data.name} */}
                                     {' '}
                                     <img
-                                        src='Icons/line.svg'
+                                        src={line}
                                         alt='line'
                                         height='13px'
                                         style={{ verticalAlign: 'inherit' }}

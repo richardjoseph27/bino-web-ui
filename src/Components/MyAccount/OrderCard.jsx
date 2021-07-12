@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 import BillItems from '../CheckoutPage/Customer/BillItems';
+import checkmark from '../../images/checkmark.svg';
 
 const Wrapper = styled.div`
     font-family: ProximaNova, Arial, Helvetica Neue, sans-serif;
@@ -106,7 +107,7 @@ const OrderCard = (props) => {
                             </div>
                             <div className='col-md-auto text-right mt-1 text-muted'>
                                 Delivered
-                                <Tick src='Icons/checkmark.svg' alt='Check' />
+                                <Tick src={checkmark} alt='Check' />
                             </div>
                         </div>
                     </div>

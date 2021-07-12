@@ -110,26 +110,6 @@ const HotelCardMobile = (props) => {
               >
                 ₹{data.average_cost} FOR TWO
               </span></div>
-              {/* <div className="dropdown-divider"></div>
-              <Discount className="font-weight-normal">
-                <img
-                  src="discountBadge.svg"
-                  alt="discountBadge"
-                  width="15px"
-                  style={{
-                    marginRight: "10px",
-                    marginBottom: "5px",
-                  }}
-                />
-                10% off | Use BINOIT
-              </Discount>
-              <QuickView
-                className="text-center font-weight-bold mb-0"
-                style={{ color: "#5d8ed5" }}
-              >
-                <div className="dropdown-divider"></div>
-                QUICK VIEW
-              </QuickView> */}
             </div> 
           </div>
         </Div>

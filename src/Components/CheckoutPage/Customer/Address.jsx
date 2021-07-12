@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Location from './Location';
 import { useHistory } from 'react-router-dom';
+import checkmark from './../../../images/checkmark.svg';
+import placeholder from './../../../images/placeholder.svg';
+import location from './../../../images/location.svg';
 
 const Wrapper = styled.div`
     font-family: system-ui !important;
@@ -121,7 +124,7 @@ const CurrAddr = () => {
                     <AddressContainer type='button' className='row py-3'>
                         <div className='col-1'>
                             <AddLocation
-                                src='Icons/location.svg'
+                                src={location}
                                 alt='placeholder'
                             />
                         </div>
@@ -189,7 +192,7 @@ const Address = (props) => {
                     <div className='row'>
                         <Logo className='col-1'>
                             <LocationIcon
-                                src='Icons/placeholder.svg'
+                                src={placeholder}
                                 alt='placeholder'
                             />
                         </Logo>
@@ -199,7 +202,7 @@ const Address = (props) => {
                                     <Title>
                                         Delivery Address
                                         <Tick
-                                            src='Icons/checkmark.svg'
+                                            src={checkmark}
                                             alt='Check'
                                         />
                                     </Title>
@@ -213,7 +216,7 @@ const Address = (props) => {
                                         >
                                             <div className='col-1'>
                                                 <AddLocation
-                                                    src='Icons/location.svg'
+                                                    src={location}
                                                     alt='placeholder'
                                                 />
                                             </div>
@@ -263,7 +266,7 @@ const Address = (props) => {
                         <div className='row'>
                             <Logo className='col-1'>
                                 <LocationIcon
-                                    src='Icons/placeholder.svg'
+                                    src={placeholder}
                                     alt='placeholder'
                                 />
                             </Logo>

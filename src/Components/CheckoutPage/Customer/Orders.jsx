@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Hotel from "./Hotel";
 import BillItems from "./BillItems";
 import { useSelector } from "react-redux";
+import information from '../../../images/information.svg';
+import percentage from '../../../images/percentage.svg';
 
 const Wrapper1 = styled.div`
     overflow: hidden;
@@ -189,7 +191,7 @@ const Orders = () => {
             <div  style={{display:'flex', flexDirection:'row',height:'55px', alignItems:'center', border:'1px dashed #a9abb2', padding:'10px', marginBottom:'20px'}}>
               {" "}
               <img
-                src="percentage.svg"
+                src={percentage}
                 alt="percentage"
                 width="20px"
                 height='20px'
@@ -209,7 +211,7 @@ const Orders = () => {
           <div className="col row justify-content-between pr-0 mb-1">
             <div className="col text-muted">
               Item Total
-              <Info src="/Icons/information.svg" alt="info" />
+              <Info src={information} alt="info" />
             </div>
             <div className="col-4 text-right pr-0 text-muted">
               ₹{state.cart.reduce((a, b) => a + b.qty * b.price, 0)}
@@ -219,7 +221,7 @@ const Orders = () => {
           <div className="col row justify-content-between pr-0 mb-3">
             <div className="col text-muted">
               Delivery partner fee
-              <Info src="/Icons/information.svg" alt="info" />
+              <Info src={information} alt="info" />
             </div>
             <div className="col-4 text-right pr-0 text-muted">₹ 50</div>
             <div class="w-100"></div>
