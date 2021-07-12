@@ -229,7 +229,7 @@ export default function TemporaryDrawer() {
                             // paddingRight: '15px',
                         }}
                     >
-                        <CustomInputField label='Door/Flat No. richard' onChange={(id, value) => setFlatNo(value)}/>
+                        <CustomInputField label='Door/Flat No.' onChange={(id, value) => setFlatNo(value)}/>
                         {/* <TextField
                             label='Door/Flat No.'
                             placeholder=''

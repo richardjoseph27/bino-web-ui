@@ -41,7 +41,7 @@ export default function TemporaryDrawer() {
 
     useEffect(() => {
         if (localStorage.getItem('Coordinates') == null) {
-            setArea('Bangaluru');
+            setArea('Magarpatta City');
         } else {
             setArea(JSON.parse(localStorage.getItem('Coordinates')).area);
         }
