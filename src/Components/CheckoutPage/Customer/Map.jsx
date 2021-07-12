@@ -103,9 +103,13 @@ const Map = () => {
                 mapStyle='mapbox://styles/mapbox/light-v10'
             >
                 <Marker
-                    key={data.lat}
-                    latitude={data.lat}
-                    longitude={data.long}
+                    // key={data.lat}
+                    // latitude={data.lat}
+                    // longitude={data.long}
+                    
+                    key={18.634363666666665}
+                    latitude={18.634363666666665}
+                    longitude={73.78761533333333}
                 >
                     <Loc src={mapbox} alt='location' />
                     {/* TODO{data.area} */}
