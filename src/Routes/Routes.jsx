@@ -17,7 +17,7 @@ export const Routes = () => {
         <Route path="/MenuPage" render={() => <MenuPages />} />
         <Route
           path="/CheckoutPage"
-          render={(props) => <CheckoutPage {...props} />}
+          render={(props) => <CheckoutPage {...props}/>}
         />
         <Route
           path="/ShowMoreRestaurants"

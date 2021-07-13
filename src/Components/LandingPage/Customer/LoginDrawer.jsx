@@ -13,6 +13,7 @@ import { CustomInputField } from '../../../CommonComponents';
 
 const Div = styled.div`
     font-family: sans-serif;
+    width:100%;
 `;
 
 const useStyles = makeStyles({

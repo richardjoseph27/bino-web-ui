@@ -5,7 +5,7 @@ export const Div = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  justifu-content: center;
+  justify-content: center;
 `;
 
 export const Header = styled.div`

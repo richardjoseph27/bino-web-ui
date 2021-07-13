@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import {
   Div,
   InnerDiv,
@@ -24,17 +24,22 @@ import mainLogo from "../../images/veg_logo.png";
 // import {LogoLanding} from './../LandingPage/LandingStyledComponents';
 // import mainLogo from '../../images/temp.jpeg';
 import logoV from "../../images/logo_vertical.png";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-export class LandingUpper extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: [],
-      visible: false,
-    };
-  }
+const LandingUpper= (props) =>  {
+  // constructor(props) {
+    // super(props);
+  //   // this.state = {
+  //   //   data: [],
+  //   //   visible: false,
+  //   // };
+  //   const [data, setData] = useState('');
+  //   // const [visible, setVisible] = useState(false);
+  // }
 
-  handleInputChange = (e) => {
+  const [data, setData] = useState([]);
+
+  const handleInputChange = (e) => {
     // const history = useHistory();
     axios({
       method: "get",
@@ -45,18 +50,19 @@ export class LandingUpper extends Component {
       },
     })
       .then((res) => {
-        this.setState({
-          data: res.data.features,
-        });
+        // this.setState({
+        //   data: res.data.features,
+        // });
+        setData(res.data.features);
         // console.log(res);
-        this.getLocation(res.data.features);
+        getLocation(res.data.features);
       })
       .catch((err) => {
         console.log(err);
       });
   };
 
-  getLocation = (data) => {
+  const getLocation = (data) => {
     data.map((item, i) => {
       if (i === 0) {
         var long = item.center[0];
@@ -78,57 +84,52 @@ export class LandingUpper extends Component {
     });
   };
 
-  goTo = () => {
-    this.props.history.push("/Restaurants");
+  const goTo = () => {
+    props.history.push("/Restaurants");
   };
 
-  render() {
+    const matches = useMediaQuery('(max-width:960px)');
+
     return (
-      <Div className="">
-        <Header className="">
-          <div className="mx-4">
+      <Div style={matches ? {display:'flex',width:'100%',alignItems:'center'}: null}>
+        <Header className="" style={matches ? { margin:0, marginBottom:'2.5%' }: null}>
+          <div className={matches ? null: "mx-10"} style={matches ? {marginLeft:'3%',marginRight:'3%'}:null}>
             {/* LOGO */}
-            <SignIn className="px-4 py-8">
-              <Logo src={logoV} alt="logo" />
-              <div>
+            <SignIn style={matches ? {display:'flex', flexDirection:'row', alignItems:'center', paddingTop:10, paddingBottom:0}: {paddingTop:4, paddingBottom:8}}>
+              <img src={logoV} alt="logo" style={matches ? {alignSelf:'start',height:'80px', width:'auto'}: {height: '110px', width: 'auto', paddingRight: '20px'}}/>
+              <div style={matches ?{width:'50%',display:'flex', flexDirection:'column', alignItems:'flex-end', paddingBottom:'5%'}:null}>
                 <div
-                  className="btn btn-lg font-weight-bold"
-                  style={{ textAlign: "right" }}
-                >
+                 className= {!matches ? "btn btn-lg font-weight-bold": null}
+                 style={matches ? null: {textAlign: "left"}}>
                   <LoginDrawer />
                 </div>
                 <div
-                  className="btn btn-lg font-weight-bold"
-                  style={{
-                    textAlign: "left",
-                  }}
-                >
+                  className= {!matches ? "btn btn-lg font-weight-bold": null}
+                  style={matches ? null: {textAlign: "left"}}>
                   <RegisterDrawer />
                 </div>
               </div>
             </SignIn>
             <div>
               {/* SOME TEXT & TAG LINE */}
-              <InnerDiv className="py-10">
-                <p className="text-left h2 font-weight-bold">
+              <div>
+                <p className={matches? "text-left h5 text-muted font-weight-normal": "text-left h2 font-weight-bold"}>
                   {" "}
                   Looking for nearby sellers ?{" "}
                 </p>
 
-                <p className="text-left h4 text-muted">
+                <p className={matches? "text-left h6": "text-left h4 text-muted"}>
                   Find local businesses, items and prices (Early Access)
                 </p>
-              </InnerDiv>
+              </div>
 
               {/* SEARCH BAR */}
 
-              <Search>
+              <Search style={matches ?{ height:'40%'}:null}>
                 <div
-                  style={{
-                    flex: 1,
-                    display: "flex",
-                    padding: "5px",
-                  }}
+                  style={matches ?{
+                  display: "flex", padding: "5px", width:'80%'
+                  }: { flex: 1, display: "flex", padding: "5px"}}
                 >
                   <Autocomplete
                     style={{
@@ -141,13 +142,13 @@ export class LandingUpper extends Component {
                     freeSolo
                     id="free-solo-2-demo"
                     disableClearable
-                    options={this.state.data.map((place) => place.place_name)}
+                    options={data.map((place) => place.place_name)}
                     renderInput={(params) => (
                       <TextField
                         className="text-left form-control-plaintext text-muted font-weight-bold"
                         id="outlined-helperText"
-                        placeholder="Enter Your delivery location"
-                        onChange={this.handleInputChange}
+                        placeholder={matches ? "your location...":"Enter Your delivery location"}
+                        onChange={handleInputChange}
                         {...params}
                         InputProps={{
                           ...params.InputProps,
@@ -162,7 +163,7 @@ export class LandingUpper extends Component {
                   />
                   <button
                     type="button"
-                    className="btn"
+                    className={matches ? "btn btn-sm":"btn"}
                     style={{
                       flex: 1,
                     }}
@@ -172,15 +173,15 @@ export class LandingUpper extends Component {
                 </div>
                 <button
                   type="button"
-                  className="btn btn-lg"
-                  onClick={this.goTo}
+                  className={matches ? "btn btn-sm":"btn btn-lg"}
+                  onClick={goTo}
                   style={{
                     color: "white",
                     backgroundColor: "#fc8019",
                     borderRadius: "0px",
                   }}
-                >
-                  <h6 className="font-weight-bold">FIND SELLER</h6>
+                >{matches ?  <h8 className="font-weight-normal">FIND SELLER</h8> :  <h6 className="font-weight-bold">FIND SELLER</h6>}
+                 
                 </button>
               </Search>
             </div>
@@ -198,7 +199,7 @@ export class LandingUpper extends Component {
             className="row justify-content-around"
             style={{ backgroundColor: "#2A3490" }}
           >
-            <div className="col-3 ml-2 mt-3 pb-2">
+            <div className={matches ? "col-4 mt-3" : "col-3 ml-2 mt-3 pb-2"}>
               <Card className="card">
                 <CardImg
                   src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
@@ -216,7 +217,7 @@ export class LandingUpper extends Component {
                 </div>
               </Card>
             </div>
-            <div className="col-3 mt-3">
+            <div className={matches ? "col-4 mt-3" : "col-3 mt-3"}>
               <Card className="card">
                 <CardImg
                   src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
@@ -224,9 +225,9 @@ export class LandingUpper extends Component {
                   alt="Live Order Tracking"
                 />
                 <div className="card-body" style={{ color: "white" }}>
-                  <h5 className="card-title h4 font-weight-bold mt-2">
+                  <h10 className="card-title h4 font-weight-bold mt-2">
                     Live Order Tracking
-                  </h5>
+                  </h10>
                   <p className="card-text">
                     Know where your order is at all times, from the shops to
                     your doorstep
@@ -234,8 +235,8 @@ export class LandingUpper extends Component {
                 </div>
               </Card>
             </div>
-            <div className="col-3 mr-2 mt-3">
-              <Card className="card">
+            <div className={matches ? "col-4 mt-3" : "col-2 mr-2 mt-3"}>
+              <Card className="card" >
                 <CardImg
                   src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
                   className="card-img-top align-self-center"
@@ -257,6 +258,4 @@ export class LandingUpper extends Component {
       </Div>
     );
   }
-}
-
 export default withRouter(LandingUpper);
