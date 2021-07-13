@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/bino-web-ui/static/css/main.923535e6.chunk.css",
-    "main.js": "/bino-web-ui/static/js/main.a62a45de.chunk.js",
-    "main.js.map": "/bino-web-ui/static/js/main.a62a45de.chunk.js.map",
-    "runtime-main.js": "/bino-web-ui/static/js/runtime-main.8ddbedc7.js",
-    "runtime-main.js.map": "/bino-web-ui/static/js/runtime-main.8ddbedc7.js.map",
+    "main.css": "/bino-web-ui/static/css/main.33b490fe.chunk.css",
+    "main.js": "/bino-web-ui/static/js/main.2013ddb3.chunk.js",
+    "main.js.map": "/bino-web-ui/static/js/main.2013ddb3.chunk.js.map",
+    "runtime-main.js": "/bino-web-ui/static/js/runtime-main.1c0d948b.js",
+    "runtime-main.js.map": "/bino-web-ui/static/js/runtime-main.1c0d948b.js.map",
     "static/css/2.82eb70c8.chunk.css": "/bino-web-ui/static/css/2.82eb70c8.chunk.css",
-    "static/js/2.328108a9.chunk.js": "/bino-web-ui/static/js/2.328108a9.chunk.js",
-    "static/js/2.328108a9.chunk.js.map": "/bino-web-ui/static/js/2.328108a9.chunk.js.map",
-    "static/js/3.51007a39.chunk.js": "/bino-web-ui/static/js/3.51007a39.chunk.js",
-    "static/js/3.51007a39.chunk.js.map": "/bino-web-ui/static/js/3.51007a39.chunk.js.map",
+    "static/js/2.3bc4185b.chunk.js": "/bino-web-ui/static/js/2.3bc4185b.chunk.js",
+    "static/js/2.3bc4185b.chunk.js.map": "/bino-web-ui/static/js/2.3bc4185b.chunk.js.map",
+    "static/js/3.743242ce.chunk.js": "/bino-web-ui/static/js/3.743242ce.chunk.js",
+    "static/js/3.743242ce.chunk.js.map": "/bino-web-ui/static/js/3.743242ce.chunk.js.map",
     "index.html": "/bino-web-ui/index.html",
     "static/css/2.82eb70c8.chunk.css.map": "/bino-web-ui/static/css/2.82eb70c8.chunk.css.map",
-    "static/css/main.923535e6.chunk.css.map": "/bino-web-ui/static/css/main.923535e6.chunk.css.map",
-    "static/js/2.328108a9.chunk.js.LICENSE.txt": "/bino-web-ui/static/js/2.328108a9.chunk.js.LICENSE.txt",
+    "static/css/main.33b490fe.chunk.css.map": "/bino-web-ui/static/css/main.33b490fe.chunk.css.map",
+    "static/js/2.3bc4185b.chunk.js.LICENSE.txt": "/bino-web-ui/static/js/2.3bc4185b.chunk.js.LICENSE.txt",
     "static/media/address.47d49f1c.svg": "/bino-web-ui/static/media/address.47d49f1c.svg",
     "static/media/appSSDetails.195e9d5d.png": "/bino-web-ui/static/media/appSSDetails.195e9d5d.png",
     "static/media/appSSMain.e67abcd2.png": "/bino-web-ui/static/media/appSSMain.e67abcd2.png",
@@ -39,10 +39,10 @@
     "static/media/wallet.c75e37ae.svg": "/bino-web-ui/static/media/wallet.c75e37ae.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ddbedc7.js",
+    "static/js/runtime-main.1c0d948b.js",
     "static/css/2.82eb70c8.chunk.css",
-    "static/js/2.328108a9.chunk.js",
-    "static/css/main.923535e6.chunk.css",
-    "static/js/main.a62a45de.chunk.js"
+    "static/js/2.3bc4185b.chunk.js",
+    "static/css/main.33b490fe.chunk.css",
+    "static/js/main.2013ddb3.chunk.js"
   ]
 }
