@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bino-web-ui/static/css/main.33b490fe.chunk.css",
-    "main.js": "/bino-web-ui/static/js/main.2013ddb3.chunk.js",
-    "main.js.map": "/bino-web-ui/static/js/main.2013ddb3.chunk.js.map",
+    "main.js": "/bino-web-ui/static/js/main.70dfbc14.chunk.js",
+    "main.js.map": "/bino-web-ui/static/js/main.70dfbc14.chunk.js.map",
     "runtime-main.js": "/bino-web-ui/static/js/runtime-main.1c0d948b.js",
     "runtime-main.js.map": "/bino-web-ui/static/js/runtime-main.1c0d948b.js.map",
     "static/css/2.82eb70c8.chunk.css": "/bino-web-ui/static/css/2.82eb70c8.chunk.css",
@@ -18,6 +18,7 @@
     "static/media/appSSDetails.195e9d5d.png": "/bino-web-ui/static/media/appSSDetails.195e9d5d.png",
     "static/media/appSSMain.e67abcd2.png": "/bino-web-ui/static/media/appSSMain.e67abcd2.png",
     "static/media/avatar.fbf2f88b.svg": "/bino-web-ui/static/media/avatar.fbf2f88b.svg",
+    "static/media/bikeDelivery.2f8962a1.png": "/bino-web-ui/static/media/bikeDelivery.2f8962a1.png",
     "static/media/checkmark.7b8464b2.svg": "/bino-web-ui/static/media/checkmark.7b8464b2.svg",
     "static/media/discountBadge.91974d86.svg": "/bino-web-ui/static/media/discountBadge.91974d86.svg",
     "static/media/equal.eacf9068.svg": "/bino-web-ui/static/media/equal.eacf9068.svg",
@@ -34,6 +35,7 @@
     "static/media/payment.edc69b4b.svg": "/bino-web-ui/static/media/payment.edc69b4b.svg",
     "static/media/percentage.913b45d7.svg": "/bino-web-ui/static/media/percentage.913b45d7.svg",
     "static/media/placeholder.d93b01ff.svg": "/bino-web-ui/static/media/placeholder.d93b01ff.svg",
+    "static/media/tracking.daa94bba.png": "/bino-web-ui/static/media/tracking.daa94bba.png",
     "static/media/veg.fc7d733b.png": "/bino-web-ui/static/media/veg.fc7d733b.png",
     "static/media/veg_logo.a98c910e.png": "/bino-web-ui/static/media/veg_logo.a98c910e.png",
     "static/media/wallet.c75e37ae.svg": "/bino-web-ui/static/media/wallet.c75e37ae.svg"
@@ -43,6 +45,6 @@
     "static/css/2.82eb70c8.chunk.css",
     "static/js/2.3bc4185b.chunk.js",
     "static/css/main.33b490fe.chunk.css",
-    "static/js/main.2013ddb3.chunk.js"
+    "static/js/main.70dfbc14.chunk.js"
   ]
 }
