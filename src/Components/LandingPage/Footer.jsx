@@ -85,15 +85,13 @@ function Footer() {
               <img
                 src={ssOne}
                 alt="image1"
-                // style={{}}
-                // className="img-fluid"
+                style={{width: '100%', height:'auto'}}
               /></div>
               <div style={{display:'flex', flexDirection:'column', marginRight:'-5%',}}>
               <img
                 src={ssTwo}
                 alt="image2"
-                // style={{ bottom: 0, right: 0 }}
-                // className="img-fluid"
+                style={{width: '100%', height:'auto'}}
               /></div>
             </div>
           </div>}

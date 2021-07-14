@@ -24,6 +24,9 @@ import mainLogo from "../../images/veg_logo.png";
 // import {LogoLanding} from './../LandingPage/LandingStyledComponents';
 // import mainLogo from '../../images/temp.jpeg';
 import logoV from "../../images/logo_vertical.png";
+import tracking from '../../images/tracking.png';
+import delivery from '../../images/delivery.png';
+import bikeDelivery from '../../images/bikeDelivery.png';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const LandingUpper= (props) =>  {
@@ -192,17 +195,17 @@ const LandingUpper= (props) =>  {
 
         {/* MIDDLE PART */}
         <CardContainer
-          className="row justify-content-around pb-2"
+          className={matches ? "row pb-2":"row justify-content-around pb-2"}
           style={{ backgroundColor: "white" }}
         >
           <div
-            className="row justify-content-around"
+            className={matches ? "row text-left h6":"row justify-content-around"}
             style={{ backgroundColor: "#2A3490" }}
           >
             <div className={matches ? "col-4 mt-3" : "col-3 ml-2 mt-3 pb-2"}>
               <Card className="card">
                 <CardImg
-                  src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+                  src={delivery}
                   className="card-img-top align-self-center"
                   alt="No Minimum Order"
                 />
@@ -220,7 +223,7 @@ const LandingUpper= (props) =>  {
             <div className={matches ? "col-4 mt-3" : "col-3 mt-3"}>
               <Card className="card">
                 <CardImg
-                  src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
+                  src={bikeDelivery}
                   className="card-img-top align-self-center"
                   alt="Live Order Tracking"
                 />
@@ -238,7 +241,7 @@ const LandingUpper= (props) =>  {
             <div className={matches ? "col-4 mt-3" : "col-2 mr-2 mt-3"}>
               <Card className="card" >
                 <CardImg
-                  src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
+                  src={tracking}
                   className="card-img-top align-self-center"
                   alt="Lightning-Fast Delivery"
                 />
